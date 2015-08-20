@@ -18,7 +18,7 @@ class FamilyViewController: UIViewController {
     
     // MARK: Lifecycle
     override func viewDidLoad() {
-        let user = AppDelegate.sharedAppDelegate.currentUser!
+        let user = User.currentUser()!
         if !user.hasFamilies {
             if !user.isAdult {
                 self.instructionHeightConstraint.constant = self.view.bounds.height / 2.0

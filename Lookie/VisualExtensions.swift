@@ -1,5 +1,5 @@
 //
-//  UIViewVisualExtensions.swift
+//  VisualExtensions.swift
 //  Lookie!
 //
 //  Created by PATRICK PERINI on 8/20/15.
@@ -23,5 +23,18 @@ import UIKit
     @IBInspectable var cornerRadius: CGFloat {
         get { return self.layer.cornerRadius }
         set { self.layer.cornerRadius = newValue }
+    }
+}
+
+@IBDesignable class TextField: UITextField {
+    // MARK: Properties
+    @IBInspectable var textInsets: CGSize = CGSize()
+    
+    override func textRectForBounds(bounds: CGRect) -> CGRect {
+        return CGRectInset(bounds, self.textInsets.width, self.textInsets.height)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect {
+        return CGRectInset(bounds, self.textInsets.width, self.textInsets.height)
     }
 }

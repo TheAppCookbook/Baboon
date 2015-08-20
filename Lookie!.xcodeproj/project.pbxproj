@@ -13,15 +13,18 @@
 		73DE2AF71B863EE10068CB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF51B863EE10068CB17 /* Main.storyboard */; };
 		73DE2AF91B863EE10068CB17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF81B863EE10068CB17 /* Images.xcassets */; };
 		73DE2AFC1B863EE10068CB17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */; };
-		73DE2B081B863EE10068CB17 /* BaboonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B071B863EE10068CB17 /* BaboonTests.swift */; };
+		73DE2B081B863EE10068CB17 /* LookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B071B863EE10068CB17 /* LookieTests.swift */; };
 		73DE2B121B863FF80068CB17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B111B863FF80068CB17 /* User.swift */; };
 		73DE2B141B8643D50068CB17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B111B863FF80068CB17 /* User.swift */; };
 		73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B151B864CCD0068CB17 /* LoginViewController.swift */; };
 		73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */; };
-		73FAFB951B866EE400E14A1B /* UIViewVisualExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */; };
+		73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB941B866EE400E14A1B /* VisualExtensions.swift */; };
 		73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB971B86706D00E14A1B /* FamilyMembersViewController.swift */; };
 		73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */; };
 		73FAFB9C1B86755400E14A1B /* RandomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */; };
+		73FAFBA01B8681A500E14A1B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9D1B8681A500E14A1B /* Nunito-Bold.ttf */; };
+		73FAFBA11B8681A500E14A1B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9E1B8681A500E14A1B /* Nunito-Light.ttf */; };
+		73FAFBA21B8681A500E14A1B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,14 +50,18 @@
 		73DE2AFB1B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		73DE2B011B863EE10068CB17 /* Lookie!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lookie!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2B061B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73DE2B071B863EE10068CB17 /* BaboonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BaboonTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2B071B863EE10068CB17 /* LookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LookieTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2B111B863FF80068CB17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = User.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2B151B864CCD0068CB17 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FamilyViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewVisualExtensions.swift; sourceTree = "<group>"; };
+		73FAFB941B866EE400E14A1B /* VisualExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualExtensions.swift; sourceTree = "<group>"; };
 		73FAFB971B86706D00E14A1B /* FamilyMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMembersViewController.swift; sourceTree = "<group>"; };
 		73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiExtensions.swift; sourceTree = "<group>"; };
 		73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomExtensions.swift; sourceTree = "<group>"; };
+		73FAFB9D1B8681A500E14A1B /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		73FAFB9E1B8681A500E14A1B /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		73FAFBA31B868B4400E14A1B /* Lookie!-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lookie!-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +124,7 @@
 				73FAFB961B866EE800E14A1B /* Extensions */,
 				73DE2AF81B863EE10068CB17 /* Images.xcassets */,
 				73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */,
+				73FAFBA31B868B4400E14A1B /* Lookie!-Bridging-Header.h */,
 				73DE2AEF1B863EE10068CB17 /* Supporting Files */,
 			);
 			name = "Lookie!";
@@ -126,6 +134,9 @@
 		73DE2AEF1B863EE10068CB17 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73FAFB9D1B8681A500E14A1B /* Nunito-Bold.ttf */,
+				73FAFB9E1B8681A500E14A1B /* Nunito-Light.ttf */,
+				73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */,
 				73DE2AF01B863EE10068CB17 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -134,7 +145,7 @@
 		73DE2B041B863EE10068CB17 /* Lookie!Tests */ = {
 			isa = PBXGroup;
 			children = (
-				73DE2B071B863EE10068CB17 /* BaboonTests.swift */,
+				73DE2B071B863EE10068CB17 /* LookieTests.swift */,
 				73DE2B051B863EE10068CB17 /* Supporting Files */,
 			);
 			name = "Lookie!Tests";
@@ -171,7 +182,7 @@
 		73FAFB961B866EE800E14A1B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */,
+				73FAFB941B866EE400E14A1B /* VisualExtensions.swift */,
 				73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */,
 				73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */,
 			);
@@ -272,8 +283,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FAFBA21B8681A500E14A1B /* Nunito-Regular.ttf in Resources */,
 				73DE2AF71B863EE10068CB17 /* Main.storyboard in Resources */,
+				73FAFBA11B8681A500E14A1B /* Nunito-Light.ttf in Resources */,
 				73DE2AFC1B863EE10068CB17 /* LaunchScreen.xib in Resources */,
+				73FAFBA01B8681A500E14A1B /* Nunito-Bold.ttf in Resources */,
 				73DE2AF91B863EE10068CB17 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +402,7 @@
 				73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */,
 				73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */,
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
-				73FAFB951B866EE400E14A1B /* UIViewVisualExtensions.swift in Sources */,
+				73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */,
 				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
 				73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */,
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
@@ -402,7 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73DE2B141B8643D50068CB17 /* User.swift in Sources */,
-				73DE2B081B863EE10068CB17 /* BaboonTests.swift in Sources */,
+				73DE2B081B863EE10068CB17 /* LookieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,9 +538,12 @@
 			baseConfigurationReference = D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Lookie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Lookie!";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lookie/Lookie!-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -535,9 +552,11 @@
 			baseConfigurationReference = 2B8388759989B32F9B1ADF11 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Lookie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Lookie!";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lookie/Lookie!-Bridging-Header.h";
 			};
 			name = Release;
 		};

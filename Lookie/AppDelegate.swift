@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Properties
     var window: UIWindow?
-    var currentUser: User? { return PFUser.currentUser() as? User }
     
     // MARK: Lifecycel
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        User.registerSubclass()
         Parse.setApplicationId("JCAeRxPMG8eEKPAdmQP2PPVUQ5TjFRhnaH9AD9GL",
             clientKey: "GLaVrGdbmAHRed6d0w6xk0PSJK1Lwtk9Z9h7fDVd")
         

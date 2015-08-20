@@ -22,7 +22,7 @@ class FeedViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if AppDelegate.sharedAppDelegate.currentUser == nil {
+        if User.currentUser() == nil {
             self.performSegueWithIdentifier("PresentLogin",
                 sender: nil)
         }

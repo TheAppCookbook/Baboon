@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class User: PFUser {
+class User: PFUser, PFSubclassing {
     // MARK: Constants
     static let EmailRegex = NSRegularExpression(pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$",
         options: nil,
@@ -63,13 +63,7 @@ class User: PFUser {
     func addFamily(identifier: String) {
         self.pFamilies.addObject(identifier)
     }
-    
-    // MARK: Class Initializers
-    override class func initialize() {
-        super.initialize()
-        self.registerSubclass()
-    }
-    
+
     // MARK: Class Accessors
     class func identifierIsValid(identifier: String) -> Bool {
         let length = identifier.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
