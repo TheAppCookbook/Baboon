@@ -38,6 +38,10 @@ class User: PFUser {
         return (year - User.AdulthoodAge) > self.birthYear
     }
     
+    var hasFamilies: Bool {
+        return self.pFamilies.count > 0
+    }
+    
     // MARK: Initializers
     override init() {
         super.init()
