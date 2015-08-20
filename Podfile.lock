@@ -1,0 +1,26 @@
+PODS:
+  - ACBInfoPanel (0.0.1)
+  - Bolts/Tasks (1.2.0)
+  - Parse (1.8.1):
+    - Bolts/Tasks (>= 1.2.0)
+
+DEPENDENCIES:
+  - ACBInfoPanel (from `git@github.com:TheAppCookbook/templates.git`, branch `master`)
+  - Parse
+
+EXTERNAL SOURCES:
+  ACBInfoPanel:
+    :branch: master
+    :git: git@github.com:TheAppCookbook/templates.git
+
+CHECKOUT OPTIONS:
+  ACBInfoPanel:
+    :commit: c418d6be0b4ffda3c851e47191e2d6402f66fb0e
+    :git: git@github.com:TheAppCookbook/templates.git
+
+SPEC CHECKSUMS:
+  ACBInfoPanel: 186db7784366d9a331d406e02a9da58b61e1b55e
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
+
+COCOAPODS: 0.38.2

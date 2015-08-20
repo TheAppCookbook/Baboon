@@ -8,29 +8,48 @@
 
 import UIKit
 import XCTest
+import Parse
 
 class BaboonTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAdulthood() {
+        let user = User(name: "Test User",
+            birthYear: 1991,
+            identifier: "+1 240 291 2158")
+        XCTAssertTrue(user.isAdult, "User is not adult")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testRegistration() {
+        let user = User(name: "Test User",
+            birthYear: 1991,
+            identifier: "+1 240 291 2158")
+        
+        let success: Bool = user.signUp()
+        
+        XCTAssertTrue(success, "User was not registered")
+        XCTAssertEqual(PFUser.currentUser()!.username!, user.username!, "User is not current user")
+        
+        user.delete()
+        PFUser.logOut()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testLogin() {
+        let user = User(name: "Test User",
+            birthYear: 1991,
+            identifier: "+1 240 291 2158")
+        
+        let signUpSuccess: Bool = user.signUp()
+        
+        XCTAssertTrue(signUpSuccess, "User was not registered")
+        XCTAssertEqual(PFUser.currentUser()!, user, "User is not current user")
+        
+        PFUser.logOut()
+        PFUser.logInWithUsername(user.username!,
+            password: user.password!)
+        
+        XCTAssertEqual(PFUser.currentUser()!.username!, user.username!, "User is not current user")
+
+        PFUser.currentUser()?.delete()
+        PFUser.logOut()
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
