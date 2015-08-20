@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C3775C6-E65C-4E10-8416-53A2EC1A4A8C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Baboon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D0611D258350B6514CAD122EF8C900B53EC6E235</key>
+		<string>github.com:TheAppCookbook/Baboon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Baboon.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D0611D258350B6514CAD122EF8C900B53EC6E235</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:TheAppCookbook/Baboon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0611D258350B6514CAD122EF8C900B53EC6E235</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0611D258350B6514CAD122EF8C900B53EC6E235</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Baboon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

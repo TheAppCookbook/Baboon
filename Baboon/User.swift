@@ -21,6 +21,7 @@ class User: PFUser {
     
     // MARK: Parse Properties
     @NSManaged var pName: String
+    @NSManaged var pEmoji: String
     @NSManaged var pBirthYear: Int
     @NSManaged var pFamilies: NSMutableArray //[String]
     
@@ -28,6 +29,7 @@ class User: PFUser {
     var name: String { return self.pName }
     var birthYear: Int { return self.pBirthYear }
     var identifier: String { return self.username! }
+    var emoji: String { return self.pEmoji }
     
     var isAdult: Bool {
         let year = NSCalendar.currentCalendar().component(NSCalendarUnit.CalendarUnitYear,
@@ -41,10 +43,11 @@ class User: PFUser {
         super.init()
     }
     
-    init(name: String, birthYear: Int, identifier: String) {
+    init(name: String, emoji: String, birthYear: Int, identifier: String) {
         super.init()
         
         self.pName = name
+        self.pEmoji = emoji
         self.pBirthYear = birthYear
         self.pFamilies = NSMutableArray()
         

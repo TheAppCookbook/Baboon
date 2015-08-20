@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		3F1B5BEC967F2441A560B63D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF11B863EE10068CB17 /* AppDelegate.swift */; };
-		73DE2AF41B863EE10068CB17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF31B863EE10068CB17 /* ViewController.swift */; };
+		73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF31B863EE10068CB17 /* FeedViewController.swift */; };
 		73DE2AF71B863EE10068CB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF51B863EE10068CB17 /* Main.storyboard */; };
 		73DE2AF91B863EE10068CB17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF81B863EE10068CB17 /* Images.xcassets */; };
 		73DE2AFC1B863EE10068CB17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */; };
 		73DE2B081B863EE10068CB17 /* BaboonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B071B863EE10068CB17 /* BaboonTests.swift */; };
 		73DE2B121B863FF80068CB17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B111B863FF80068CB17 /* User.swift */; };
 		73DE2B141B8643D50068CB17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B111B863FF80068CB17 /* User.swift */; };
+		73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B151B864CCD0068CB17 /* LoginViewController.swift */; };
+		73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,7 +37,7 @@
 		73DE2AEC1B863EE10068CB17 /* Baboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2AF01B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DE2AF11B863EE10068CB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73DE2AF31B863EE10068CB17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73DE2AF31B863EE10068CB17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		73DE2AF61B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DE2AF81B863EE10068CB17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73DE2AFB1B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		73DE2B061B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DE2B071B863EE10068CB17 /* BaboonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaboonTests.swift; sourceTree = "<group>"; };
 		73DE2B111B863FF80068CB17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		73DE2B151B864CCD0068CB17 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,9 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				73DE2AF11B863EE10068CB17 /* AppDelegate.swift */,
-				73DE2AF31B863EE10068CB17 /* ViewController.swift */,
-				73DE2B131B863FFC0068CB17 /* Models */,
 				73DE2AF51B863EE10068CB17 /* Main.storyboard */,
+				73DE2B171B864CD10068CB17 /* View Controllers */,
+				73DE2B131B863FFC0068CB17 /* Models */,
 				73DE2AF81B863EE10068CB17 /* Images.xcassets */,
 				73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */,
 				73DE2AEF1B863EE10068CB17 /* Supporting Files */,
@@ -140,6 +144,16 @@
 				73DE2B111B863FF80068CB17 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		73DE2B171B864CD10068CB17 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73DE2B151B864CCD0068CB17 /* LoginViewController.swift */,
+				73DE2AF31B863EE10068CB17 /* FeedViewController.swift */,
+				73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		9FA080BEC5EA832617A1A06A /* Frameworks */ = {
@@ -349,9 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73DE2AF41B863EE10068CB17 /* ViewController.swift in Sources */,
+				73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */,
+				73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */,
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
+				73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

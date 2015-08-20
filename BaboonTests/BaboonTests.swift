@@ -14,6 +14,7 @@ class BaboonTests: XCTestCase {
     
     func testAdulthood() {
         let user = User(name: "Test User",
+            emoji: "🍆",
             birthYear: 1991,
             identifier: "+1 240 291 2158")
         XCTAssertTrue(user.isAdult, "User is not adult")
@@ -21,6 +22,7 @@ class BaboonTests: XCTestCase {
     
     func testRegistration() {
         let user = User(name: "Test User",
+            emoji: "🍆",
             birthYear: 1991,
             identifier: "+1 240 291 2158")
         
@@ -35,6 +37,7 @@ class BaboonTests: XCTestCase {
     
     func testLogin() {
         let user = User(name: "Test User",
+            emoji: "🍆",
             birthYear: 1991,
             identifier: "+1 240 291 2158")
         
