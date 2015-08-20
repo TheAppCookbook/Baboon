@@ -11,9 +11,14 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    // MARK: Class Properties
+    static var sharedAppDelegate: AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
+    
     // MARK: Properties
     var window: UIWindow?
-
+    var currentUser: User? { return PFUser.currentUser() as? User }
     
     // MARK: Lifecycel
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
