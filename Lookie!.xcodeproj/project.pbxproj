@@ -27,26 +27,26 @@
 			containerPortal = 73DE2AE41B863EE10068CB17 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 73DE2AEB1B863EE10068CB17;
-			remoteInfo = Baboon;
+			remoteInfo = Lookie;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2B8388759989B32F9B1ADF11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5611D4F3E86FDAEC76A089E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73DE2AEC1B863EE10068CB17 /* Baboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE2AEC1B863EE10068CB17 /* Lookie!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lookie!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2AF01B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73DE2AF11B863EE10068CB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73DE2AF31B863EE10068CB17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		73DE2AF11B863EE10068CB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2AF31B863EE10068CB17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FeedViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2AF61B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DE2AF81B863EE10068CB17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73DE2AFB1B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		73DE2B011B863EE10068CB17 /* BaboonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaboonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE2B011B863EE10068CB17 /* Lookie!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lookie!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2B061B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73DE2B071B863EE10068CB17 /* BaboonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaboonTests.swift; sourceTree = "<group>"; };
-		73DE2B111B863FF80068CB17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		73DE2B151B864CCD0068CB17 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
+		73DE2B071B863EE10068CB17 /* BaboonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BaboonTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2B111B863FF80068CB17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = User.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2B151B864CCD0068CB17 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FamilyViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 		73DE2AE31B863EE10068CB17 = {
 			isa = PBXGroup;
 			children = (
-				73DE2AEE1B863EE10068CB17 /* Baboon */,
-				73DE2B041B863EE10068CB17 /* BaboonTests */,
+				73DE2AEE1B863EE10068CB17 /* Lookie! */,
+				73DE2B041B863EE10068CB17 /* Lookie!Tests */,
 				73DE2AED1B863EE10068CB17 /* Products */,
 				1B2DB89D186581C828E5F85C /* Pods */,
 				9FA080BEC5EA832617A1A06A /* Frameworks */,
@@ -93,13 +93,13 @@
 		73DE2AED1B863EE10068CB17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73DE2AEC1B863EE10068CB17 /* Baboon.app */,
-				73DE2B011B863EE10068CB17 /* BaboonTests.xctest */,
+				73DE2AEC1B863EE10068CB17 /* Lookie!.app */,
+				73DE2B011B863EE10068CB17 /* Lookie!Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		73DE2AEE1B863EE10068CB17 /* Baboon */ = {
+		73DE2AEE1B863EE10068CB17 /* Lookie! */ = {
 			isa = PBXGroup;
 			children = (
 				73DE2AF11B863EE10068CB17 /* AppDelegate.swift */,
@@ -110,7 +110,8 @@
 				73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */,
 				73DE2AEF1B863EE10068CB17 /* Supporting Files */,
 			);
-			path = Baboon;
+			name = "Lookie!";
+			path = Lookie;
 			sourceTree = "<group>";
 		};
 		73DE2AEF1B863EE10068CB17 /* Supporting Files */ = {
@@ -121,13 +122,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		73DE2B041B863EE10068CB17 /* BaboonTests */ = {
+		73DE2B041B863EE10068CB17 /* Lookie!Tests */ = {
 			isa = PBXGroup;
 			children = (
 				73DE2B071B863EE10068CB17 /* BaboonTests.swift */,
 				73DE2B051B863EE10068CB17 /* Supporting Files */,
 			);
-			path = BaboonTests;
+			name = "Lookie!Tests";
+			path = LookieTests;
 			sourceTree = "<group>";
 		};
 		73DE2B051B863EE10068CB17 /* Supporting Files */ = {
@@ -167,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		73DE2AEB1B863EE10068CB17 /* Baboon */ = {
+		73DE2AEB1B863EE10068CB17 /* Lookie! */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73DE2B0B1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Baboon" */;
+			buildConfigurationList = 73DE2B0B1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Lookie!" */;
 			buildPhases = (
 				D69B7DEE4CBDFBD61B6284BA /* Check Pods Manifest.lock */,
 				73DE2AE81B863EE10068CB17 /* Sources */,
@@ -182,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = Baboon;
-			productName = Baboon;
-			productReference = 73DE2AEC1B863EE10068CB17 /* Baboon.app */;
+			name = "Lookie!";
+			productName = "Lookie!";
+			productReference = 73DE2AEC1B863EE10068CB17 /* Lookie!.app */;
 			productType = "com.apple.product-type.application";
 		};
-		73DE2B001B863EE10068CB17 /* BaboonTests */ = {
+		73DE2B001B863EE10068CB17 /* Lookie!Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73DE2B0E1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "BaboonTests" */;
+			buildConfigurationList = 73DE2B0E1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Lookie!Tests" */;
 			buildPhases = (
 				ECEFB6D3CF0D5B8C871DE676 /* Check Pods Manifest.lock */,
 				73DE2AFD1B863EE10068CB17 /* Sources */,
@@ -203,9 +205,9 @@
 			dependencies = (
 				73DE2B031B863EE10068CB17 /* PBXTargetDependency */,
 			);
-			name = BaboonTests;
-			productName = BaboonTests;
-			productReference = 73DE2B011B863EE10068CB17 /* BaboonTests.xctest */;
+			name = "Lookie!Tests";
+			productName = "Lookie!Tests";
+			productReference = 73DE2B011B863EE10068CB17 /* Lookie!Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 73DE2AE71B863EE10068CB17 /* Build configuration list for PBXProject "Baboon" */;
+			buildConfigurationList = 73DE2AE71B863EE10068CB17 /* Build configuration list for PBXProject "Lookie!" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73DE2AEB1B863EE10068CB17 /* Baboon */,
-				73DE2B001B863EE10068CB17 /* BaboonTests */,
+				73DE2AEB1B863EE10068CB17 /* Lookie! */,
+				73DE2B001B863EE10068CB17 /* Lookie!Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -385,7 +387,7 @@
 /* Begin PBXTargetDependency section */
 		73DE2B031B863EE10068CB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 73DE2AEB1B863EE10068CB17 /* Baboon */;
+			target = 73DE2AEB1B863EE10068CB17 /* Lookie! */;
 			targetProxy = 73DE2B021B863EE10068CB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -498,9 +500,9 @@
 			baseConfigurationReference = D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Baboon/Info.plist;
+				INFOPLIST_FILE = Lookie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lookie!";
 			};
 			name = Debug;
 		};
@@ -509,9 +511,9 @@
 			baseConfigurationReference = 2B8388759989B32F9B1ADF11 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Baboon/Info.plist;
+				INFOPLIST_FILE = Lookie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lookie!";
 			};
 			name = Release;
 		};
@@ -528,10 +530,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BaboonTests/Info.plist;
+				INFOPLIST_FILE = LookieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baboon.app/Baboon";
+				PRODUCT_NAME = "Lookie!Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lookie!.app/Lookie!";
 			};
 			name = Debug;
 		};
@@ -544,17 +546,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = BaboonTests/Info.plist;
+				INFOPLIST_FILE = LookieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Baboon.app/Baboon";
+				PRODUCT_NAME = "Lookie!Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lookie!.app/Lookie!";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73DE2AE71B863EE10068CB17 /* Build configuration list for PBXProject "Baboon" */ = {
+		73DE2AE71B863EE10068CB17 /* Build configuration list for PBXProject "Lookie!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73DE2B091B863EE10068CB17 /* Debug */,
@@ -563,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73DE2B0B1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Baboon" */ = {
+		73DE2B0B1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Lookie!" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73DE2B0C1B863EE10068CB17 /* Debug */,
@@ -572,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73DE2B0E1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "BaboonTests" */ = {
+		73DE2B0E1B863EE10068CB17 /* Build configuration list for PBXNativeTarget "Lookie!Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73DE2B0F1B863EE10068CB17 /* Debug */,

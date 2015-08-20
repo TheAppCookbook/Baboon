@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73DE2AEB1B863EE10068CB17"
-               BuildableName = "Baboon.app"
-               BlueprintName = "Baboon"
-               ReferencedContainer = "container:Baboon.xcodeproj">
+               BuildableName = "Lookie!.app"
+               BlueprintName = "Lookie!"
+               ReferencedContainer = "container:Lookie!.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73DE2B001B863EE10068CB17"
-               BuildableName = "BaboonTests.xctest"
-               BlueprintName = "BaboonTests"
-               ReferencedContainer = "container:Baboon.xcodeproj">
+               BuildableName = "Lookie!Tests.xctest"
+               BlueprintName = "Lookie!Tests"
+               ReferencedContainer = "container:Lookie!.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73DE2B001B863EE10068CB17"
-               BuildableName = "BaboonTests.xctest"
-               BlueprintName = "BaboonTests"
-               ReferencedContainer = "container:Baboon.xcodeproj">
+               BuildableName = "Lookie!Tests.xctest"
+               BlueprintName = "Lookie!Tests"
+               ReferencedContainer = "container:Lookie!.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73DE2AEB1B863EE10068CB17"
-            BuildableName = "Baboon.app"
-            BlueprintName = "Baboon"
-            ReferencedContainer = "container:Baboon.xcodeproj">
+            BuildableName = "Lookie!.app"
+            BlueprintName = "Lookie!"
+            ReferencedContainer = "container:Lookie!.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73DE2AEB1B863EE10068CB17"
-            BuildableName = "Baboon.app"
-            BlueprintName = "Baboon"
-            ReferencedContainer = "container:Baboon.xcodeproj">
+            BuildableName = "Lookie!.app"
+            BlueprintName = "Lookie!"
+            ReferencedContainer = "container:Lookie!.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "73DE2AEB1B863EE10068CB17"
-            BuildableName = "Baboon.app"
-            BlueprintName = "Baboon"
-            ReferencedContainer = "container:Baboon.xcodeproj">
+            BuildableName = "Lookie!.app"
+            BlueprintName = "Lookie!"
+            ReferencedContainer = "container:Lookie!.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

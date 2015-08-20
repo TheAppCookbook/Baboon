@@ -1,6 +1,6 @@
 //
-//  BaboonTests.swift
-//  BaboonTests
+//  Lookie!Tests.swift
+//  Lookie!Tests
 //
 //  Created by PATRICK PERINI on 8/20/15.
 //  Copyright (c) 2015 AppCookbook. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 import XCTest
 import Parse
 
-class BaboonTests: XCTestCase {
+class LookieTests: XCTestCase {
     
     func testAdulthood() {
         let user = User(name: "Test User",

@@ -1,6 +1,8 @@
+xcodeproj 'Lookie!.xcodeproj'
+
 use_frameworks!
 inhibit_all_warnings!
-link_with 'Baboon', 'BaboonTests'
+link_with 'Lookie!', 'Lookie!Tests'
 
 pod 'Parse'
 pod 'Spring'

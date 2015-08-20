@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6C3775C6-E65C-4E10-8416-53A2EC1A4A8C</string>
+	<string>A4AE46E4-ADAD-497E-94A2-23C4A28F327E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Baboon</string>
+	<string>Lookie!</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D0611D258350B6514CAD122EF8C900B53EC6E235</key>
-		<string>github.com:TheAppCookbook/Baboon.git</string>
+		<string>github.com:TheAppCookbook/Lookie.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Baboon.xcworkspace</string>
+	<string>Lookie!.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D0611D258350B6514CAD122EF8C900B53EC6E235</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:TheAppCookbook/Baboon.git</string>
+	<string>github.com:TheAppCookbook/Lookie.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>D0611D258350B6514CAD122EF8C900B53EC6E235</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Baboon</string>
+			<string>Lookie</string>
 		</dict>
 	</array>
 </dict>
