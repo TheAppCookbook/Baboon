@@ -8,24 +8,17 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
-    // MARK: Properties
-    @IBOutlet var familyButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.familyButton.setTitle(String.familyEmojis.random(),
-            forState: .Normal)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        if User.currentUser() == nil {
-            self.performSegueWithIdentifier("PresentLogin",
-                sender: nil)
-        }
-    }
+class FeedViewController: UITableViewController {
+
 }
 
+extension FeedViewController: UITableViewDataSource {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! UITableViewCell
+        return cell
+    }
+}

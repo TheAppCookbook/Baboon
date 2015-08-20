@@ -15,6 +15,13 @@ class FamilyViewController: UIViewController {
     @IBOutlet var instructionViews: [UIView] = []
     
     @IBOutlet var tableContainerView: UIView!
+    @IBOutlet var addFamilyButton: UIButton!
+    
+    var instructionsShowing: Bool = true
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return self.instructionsShowing ? .LightContent : .Default
+    }
     
     // MARK: Lifecycle
     override func viewDidLoad() {
@@ -26,8 +33,42 @@ class FamilyViewController: UIViewController {
                 
             }
         } else {
+            self.instructionsShowing = false
+            
             self.instructionTopConstraint.constant = self.view.bounds.height
             self.tableContainerView.hidden = false
         }
+    }
+    
+    // MARK: Responders
+    @IBAction func addFamilyButtonWasPressed(sender: UIButton!) {
+        let user = User.currentUser()!
+        if !user.hasFamilies {
+            self.instructionTopConstraint.constant = -self.view.bounds.height
+            self.instructionsShowing = false
+            
+            self.tableContainerView.alpha = 0.0
+            self.tableContainerView.hidden = false
+            
+            UIView.animateWithDuration(0.50) {
+                for view in self.instructionViews {
+                    view.layoutIfNeeded()
+                    view.alpha = 0.0
+                }
+                
+                self.tableContainerView.alpha = 1.0
+                
+                self.setNeedsStatusBarAppearanceUpdate()
+                self.addFamilyButton.setTitle("Add Family Members",
+                    forState: .Normal)
+            }
+        } else {
+            
+        }
+    }
+    
+    @IBAction func dismissButtonWasPressed(sender: UIBarButtonItem!) {
+        self.presentingViewController?.dismissViewControllerAnimated(true,
+            completion: nil)
     }
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F1B5BEC967F2441A560B63D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF11B863EE10068CB17 /* AppDelegate.swift */; };
-		73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF31B863EE10068CB17 /* FeedViewController.swift */; };
+		73DE2AF41B863EE10068CB17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF31B863EE10068CB17 /* HomeViewController.swift */; };
 		73DE2AF71B863EE10068CB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF51B863EE10068CB17 /* Main.storyboard */; };
 		73DE2AF91B863EE10068CB17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF81B863EE10068CB17 /* Images.xcassets */; };
 		73DE2AFC1B863EE10068CB17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */; };
@@ -25,6 +25,8 @@
 		73FAFBA01B8681A500E14A1B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9D1B8681A500E14A1B /* Nunito-Bold.ttf */; };
 		73FAFBA11B8681A500E14A1B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9E1B8681A500E14A1B /* Nunito-Light.ttf */; };
 		73FAFBA21B8681A500E14A1B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */; };
+		73FE3B2F1B869548009914ED /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B2E1B869548009914ED /* FeedViewController.swift */; };
+		73FE3B311B869F9A009914ED /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B301B869F9A009914ED /* PostViewController.swift */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,7 +46,7 @@
 		73DE2AEC1B863EE10068CB17 /* Lookie!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lookie!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2AF01B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DE2AF11B863EE10068CB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		73DE2AF31B863EE10068CB17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FeedViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		73DE2AF31B863EE10068CB17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HomeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2AF61B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DE2AF81B863EE10068CB17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73DE2AFB1B863EE10068CB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		73FAFB9E1B8681A500E14A1B /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		73FAFBA31B868B4400E14A1B /* Lookie!-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lookie!-Bridging-Header.h"; sourceTree = "<group>"; };
+		73FE3B2E1B869548009914ED /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		73FE3B301B869F9A009914ED /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,9 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				73DE2B151B864CCD0068CB17 /* LoginViewController.swift */,
-				73DE2AF31B863EE10068CB17 /* FeedViewController.swift */,
+				73DE2AF31B863EE10068CB17 /* HomeViewController.swift */,
+				73FE3B2E1B869548009914ED /* FeedViewController.swift */,
 				73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */,
 				73FAFB971B86706D00E14A1B /* FamilyMembersViewController.swift */,
+				73FE3B301B869F9A009914ED /* PostViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -400,7 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */,
-				73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */,
+				73DE2AF41B863EE10068CB17 /* HomeViewController.swift in Sources */,
+				73FE3B2F1B869548009914ED /* FeedViewController.swift in Sources */,
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
 				73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */,
 				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
@@ -408,6 +415,7 @@
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
 				73FAFB9C1B86755400E14A1B /* RandomExtensions.swift in Sources */,
 				73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */,
+				73FE3B311B869F9A009914ED /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
