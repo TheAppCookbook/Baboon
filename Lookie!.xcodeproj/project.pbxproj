@@ -18,8 +18,10 @@
 		73DE2B141B8643D50068CB17 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B111B863FF80068CB17 /* User.swift */; };
 		73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B151B864CCD0068CB17 /* LoginViewController.swift */; };
 		73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */; };
-		73FAFB951B866EE400E14A1B /* EmojiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB941B866EE400E14A1B /* EmojiLabel.swift */; };
+		73FAFB951B866EE400E14A1B /* UIViewVisualExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */; };
 		73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB971B86706D00E14A1B /* FamilyMembersViewController.swift */; };
+		73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */; };
+		73FAFB9C1B86755400E14A1B /* RandomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -49,8 +51,10 @@
 		73DE2B111B863FF80068CB17 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = User.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2B151B864CCD0068CB17 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73DE2B181B8657FD0068CB17 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FamilyViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		73FAFB941B866EE400E14A1B /* EmojiLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiLabel.swift; sourceTree = "<group>"; };
+		73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewVisualExtensions.swift; sourceTree = "<group>"; };
 		73FAFB971B86706D00E14A1B /* FamilyMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyMembersViewController.swift; sourceTree = "<group>"; };
+		73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiExtensions.swift; sourceTree = "<group>"; };
+		73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomExtensions.swift; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +114,7 @@
 				73DE2AF51B863EE10068CB17 /* Main.storyboard */,
 				73DE2B171B864CD10068CB17 /* View Controllers */,
 				73DE2B131B863FFC0068CB17 /* Models */,
-				73FAFB961B866EE800E14A1B /* Views */,
+				73FAFB961B866EE800E14A1B /* Extensions */,
 				73DE2AF81B863EE10068CB17 /* Images.xcassets */,
 				73DE2AFA1B863EE10068CB17 /* LaunchScreen.xib */,
 				73DE2AEF1B863EE10068CB17 /* Supporting Files */,
@@ -164,12 +168,14 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		73FAFB961B866EE800E14A1B /* Views */ = {
+		73FAFB961B866EE800E14A1B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				73FAFB941B866EE400E14A1B /* EmojiLabel.swift */,
+				73FAFB941B866EE400E14A1B /* UIViewVisualExtensions.swift */,
+				73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */,
+				73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */,
 			);
-			name = Views;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		9FA080BEC5EA832617A1A06A /* Frameworks */ = {
@@ -382,9 +388,11 @@
 				73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */,
 				73DE2AF41B863EE10068CB17 /* FeedViewController.swift in Sources */,
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
-				73FAFB951B866EE400E14A1B /* EmojiLabel.swift in Sources */,
+				73FAFB951B866EE400E14A1B /* UIViewVisualExtensions.swift in Sources */,
+				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
 				73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */,
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
+				73FAFB9C1B86755400E14A1B /* RandomExtensions.swift in Sources */,
 				73DE2B191B8657FD0068CB17 /* FamilyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

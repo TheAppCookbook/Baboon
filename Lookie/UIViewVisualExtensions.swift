@@ -1,5 +1,5 @@
 //
-//  EmojiLabel.swift
+//  UIViewVisualExtensions.swift
 //  Lookie!
 //
 //  Created by PATRICK PERINI on 8/20/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class EmojiLabel: UILabel {
+@IBDesignable extension UIView {
     // MARK: Properties
     @IBInspectable var borderWidth: CGFloat {
         get { return self.layer.borderWidth }
