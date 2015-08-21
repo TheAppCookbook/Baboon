@@ -31,6 +31,8 @@
 		73FE3B341B86A72F009914ED /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B321B86A166009914ED /* Post.swift */; };
 		73FE3B361B86C6CB009914ED /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B351B86C6CB009914ED /* Invitation.swift */; };
 		73FE3B371B86C763009914ED /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B351B86C6CB009914ED /* Invitation.swift */; };
+		73FE3B391B86DC94009914ED /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B381B86DC94009914ED /* Like.swift */; };
+		73FE3B3A1B86DD22009914ED /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B381B86DC94009914ED /* Like.swift */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,7 @@
 		73FE3B301B869F9A009914ED /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		73FE3B321B86A166009914ED /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		73FE3B351B86C6CB009914ED /* Invitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		73FE3B381B86DC94009914ED /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +179,7 @@
 				73DE2B111B863FF80068CB17 /* User.swift */,
 				73FE3B321B86A166009914ED /* Post.swift */,
 				73FE3B351B86C6CB009914ED /* Invitation.swift */,
+				73FE3B381B86DC94009914ED /* Like.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -422,6 +426,7 @@
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
 				73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */,
 				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
+				73FE3B391B86DC94009914ED /* Like.swift in Sources */,
 				73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */,
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
 				73FAFB9C1B86755400E14A1B /* RandomExtensions.swift in Sources */,
@@ -438,6 +443,7 @@
 				73FE3B341B86A72F009914ED /* Post.swift in Sources */,
 				73DE2B141B8643D50068CB17 /* User.swift in Sources */,
 				73DE2B081B863EE10068CB17 /* LookieTests.swift in Sources */,
+				73FE3B3A1B86DD22009914ED /* Like.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

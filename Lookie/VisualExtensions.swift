@@ -67,3 +67,7 @@ import UIKit
         return CGRectInset(bounds, self.textInsets.width, self.textInsets.height)
     }
 }
+
+class Button: UIButton {
+    var associatedObject: AnyObject?
+}

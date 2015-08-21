@@ -24,6 +24,7 @@
             <string>Nunito-Regular</string>
             <string>Nunito-Regular</string>
             <string>Nunito-Regular</string>
+            <string>Nunito-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -653,8 +654,8 @@
                                                         <constraint firstAttribute="height" constant="211" id="Eis-Ib-XDD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMB-3J-GjO">
-                                                    <rect key="frame" x="8" y="228" width="568" height="26.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMB-3J-GjO">
+                                                    <rect key="frame" x="8" y="228" width="454" height="26.5"/>
                                                     <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -665,17 +666,42 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-KA-e7Y">
+                                                    <rect key="frame" x="470" y="225" width="65" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="ZUv-S5-47z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5r-rw-m1J" customClass="Button" customModule="Lookie_" customModuleProvider="target">
+                                                    <rect key="frame" x="543" y="225" width="33" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="33" id="UAd-uL-nYr"/>
+                                                        <constraint firstAttribute="height" constant="33" id="nIr-M5-YBg"/>
+                                                    </constraints>
+                                                    <state key="normal" image="heart-off">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="Hor-LS-yOd" firstAttribute="top" secondItem="Bkk-Pd-iC5" secondAttribute="top" id="0Xq-aI-wMa"/>
                                                 <constraint firstItem="qpb-y5-61X" firstAttribute="top" secondItem="iMB-3J-GjO" secondAttribute="bottom" constant="8" id="1i1-rR-2yC"/>
-                                                <constraint firstAttribute="trailing" secondItem="iMB-3J-GjO" secondAttribute="trailing" constant="8" id="HH7-uw-eyJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="qpb-y5-61X" secondAttribute="trailing" constant="8" id="Meq-pi-nbi"/>
+                                                <constraint firstItem="CQA-KA-e7Y" firstAttribute="leading" secondItem="iMB-3J-GjO" secondAttribute="trailing" constant="8" id="2D5-0B-6il"/>
+                                                <constraint firstAttribute="trailing" secondItem="qpb-y5-61X" secondAttribute="trailing" constant="8" id="Auu-4H-fmp"/>
+                                                <constraint firstItem="I5r-rw-m1J" firstAttribute="leading" secondItem="CQA-KA-e7Y" secondAttribute="trailing" constant="8" id="JJ3-kH-0AK"/>
+                                                <constraint firstItem="qpb-y5-61X" firstAttribute="top" secondItem="CQA-KA-e7Y" secondAttribute="bottom" constant="4" id="Kfe-S7-rR1"/>
                                                 <constraint firstAttribute="trailing" secondItem="Hor-LS-yOd" secondAttribute="trailing" id="VfO-cf-ptt"/>
                                                 <constraint firstItem="iMB-3J-GjO" firstAttribute="top" secondItem="Hor-LS-yOd" secondAttribute="bottom" constant="17" id="Xx7-F5-OEf"/>
                                                 <constraint firstItem="iMB-3J-GjO" firstAttribute="leading" secondItem="Bkk-Pd-iC5" secondAttribute="leading" constant="8" id="YVk-hw-CXu"/>
                                                 <constraint firstItem="Hor-LS-yOd" firstAttribute="leading" secondItem="Bkk-Pd-iC5" secondAttribute="leading" id="Ygm-BJ-7EY"/>
+                                                <constraint firstItem="I5r-rw-m1J" firstAttribute="height" secondItem="CQA-KA-e7Y" secondAttribute="height" id="ZBK-Vj-OTR"/>
+                                                <constraint firstAttribute="trailing" secondItem="I5r-rw-m1J" secondAttribute="trailing" constant="8" id="nDa-Fc-mQ7"/>
+                                                <constraint firstItem="CQA-KA-e7Y" firstAttribute="centerY" secondItem="I5r-rw-m1J" secondAttribute="centerY" id="r3k-gT-f9S"/>
+                                                <constraint firstItem="qpb-y5-61X" firstAttribute="top" secondItem="I5r-rw-m1J" secondAttribute="bottom" constant="4" id="r4x-Ae-5eV"/>
                                                 <constraint firstItem="qpb-y5-61X" firstAttribute="top" secondItem="iMB-3J-GjO" secondAttribute="bottom" constant="8" id="tw6-qa-Kde"/>
                                                 <constraint firstItem="qpb-y5-61X" firstAttribute="leading" secondItem="Bkk-Pd-iC5" secondAttribute="leading" constant="8" id="w6v-u6-ian"/>
                                             </constraints>
@@ -857,6 +883,7 @@
         <image name="family" width="108" height="99"/>
         <image name="family-signup" width="336" height="300"/>
         <image name="gear" width="84" height="90"/>
+        <image name="heart-off" width="102" height="93"/>
         <image name="lookie_logo" width="705" height="291"/>
     </resources>
 </document>

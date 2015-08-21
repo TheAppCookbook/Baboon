@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         User.registerSubclass()
         Post.registerSubclass()
         Invitation.registerSubclass()
+        Like.registerSubclass()
         
         Parse.setApplicationId("JCAeRxPMG8eEKPAdmQP2PPVUQ5TjFRhnaH9AD9GL",
             clientKey: "GLaVrGdbmAHRed6d0w6xk0PSJK1Lwtk9Z9h7fDVd")

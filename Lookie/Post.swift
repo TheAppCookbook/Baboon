@@ -15,6 +15,7 @@ class Post: PFObject, PFSubclassing {
     @NSManaged var pImageURL: String
     @NSManaged var pAuthor: String
     @NSManaged var pFamily: String
+    @NSManaged var pID: String
     
     class func parseClassName() -> String {
         return "Post"
@@ -35,6 +36,8 @@ class Post: PFObject, PFSubclassing {
         self.pTitle = title
         self.pAuthor = author.identifier
         self.pFamily = author.pFamily
+        
+        self.pID = NSUUID().UUIDString
     }
     
     // MARK: Accessors
@@ -43,6 +46,14 @@ class Post: PFObject, PFSubclassing {
         User.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) in
             let user = objects!.first as! User
             completion(user)
+        })
+    }
+    
+    func likes(completion: ([Like]) -> Void) {
+        let predicate = NSPredicate(format: "pPost = %@", self.pID)
+        Like.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) in
+            let likes = objects as! [Like]
+            completion(likes)
         })
     }
     
