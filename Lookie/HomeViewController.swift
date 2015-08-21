@@ -30,6 +30,21 @@ class HomeViewController: UIViewController {
         }
         
         let user = User.currentUser()!
+        if user.isAdult && user.family == nil {
+            self.performSegueWithIdentifier("PresentFamily",
+                sender: nil)
+            return
+        }
+        
+        if user.isAdult {
+            // Disable post button
+            self.postButton.setImage(nil, forState: .Normal)
+            self.postButton.setTitle("🔞", forState: .Normal)
+            self.postButton.titleLabel?.font = UIFont.systemFontOfSize(40.0)
+            self.postButton.enabled = false
+            self.postButton.alpha = 0.5
+        }
+        
         user.invitations { (invitations: [Invitation]) in
             if let invitation = invitations.first {
                 let alert = UIAlertController(title: "Join \(invitation.invitingUserName)'s family?",

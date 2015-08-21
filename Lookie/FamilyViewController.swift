@@ -14,6 +14,9 @@ class FamilyViewController: UIViewController {
     @IBOutlet var instructionHeightConstraint: NSLayoutConstraint!
     @IBOutlet var instructionViews: [UIView] = []
     
+    @IBOutlet var topInstructionLabel: UILabel!
+    @IBOutlet var bottomInstructionLabel: UILabel!
+    
     @IBOutlet var tableContainerView: UIView!
     var embededUserSearchField: (() -> UITextField)!
     
@@ -31,15 +34,23 @@ class FamilyViewController: UIViewController {
         let user = User.currentUser()!
         if user.family == nil {
             if !user.isAdult {
-                self.instructionHeightConstraint.constant = self.view.bounds.height / 2.0
-            } else {
+                self.topInstructionLabel.text = "👨‍👩‍👧‍👦 📧 👩‍👩‍👦‍👦 📞 🎉 🎊 👻"
+                self.topInstructionLabel.font = UIFont.systemFontOfSize(50.0)
                 
+                self.bottomInstructionLabel.text = "A parent or guardian needs to invite you to a Family!"
+                
+                self.addFamilyButton.setTitle("Ok!", forState: .Normal)
             }
         } else {
             self.instructionsShowing = false
             
             self.instructionTopConstraint.constant = self.view.bounds.height
             self.tableContainerView.hidden = false
+            
+            if !user.isAdult {
+                self.addFamilyButton.hidden = true
+                self.embededUserSearchField().hidden = true
+            }
         }
     }
     
@@ -57,6 +68,12 @@ class FamilyViewController: UIViewController {
     // MARK: Responders
     @IBAction func addFamilyButtonWasPressed(sender: UIButton!) {
         let user = User.currentUser()!
+        if !user.isAdult {
+            self.presentingViewController?.dismissViewControllerAnimated(true,
+                completion: nil)
+            return
+        }
+        
         if user.family == nil && self.instructionsShowing {
             self.instructionTopConstraint.constant = -self.view.bounds.height
             self.instructionsShowing = false

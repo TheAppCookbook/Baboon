@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSFontAttributeName: UIFont(name: "Nunito-Regular", size: 15.0)!
         ]
         
+        User.currentUser()?.fetchInBackgroundWithBlock(nil)
         return true
     }
 }

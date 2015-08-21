@@ -310,7 +310,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="J7C-ze-kfr" kind="presentation" id="ot2-aw-3RA"/>
+                                    <segue destination="J7C-ze-kfr" kind="presentation" identifier="PresentFamily" id="ot2-aw-3RA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUH-y1-shG">
@@ -530,11 +530,15 @@
                     <connections>
                         <outlet property="activityIndicator" destination="UiG-c4-Nk1" id="N0z-01-6Rg"/>
                         <outlet property="addFamilyButton" destination="sJi-ug-ggV" id="zqr-RW-5hS"/>
+                        <outlet property="bottomInstructionLabel" destination="W1v-FV-cat" id="73A-V1-Ya6"/>
                         <outlet property="instructionHeightConstraint" destination="2UA-RT-OWc" id="OT9-CH-QYd"/>
                         <outlet property="instructionTopConstraint" destination="UyZ-Wy-gCE" id="DwT-tW-qeK"/>
                         <outlet property="tableContainerView" destination="bOk-o1-rEe" id="gql-EL-fFu"/>
+                        <outlet property="topInstructionLabel" destination="oEP-ls-PpU" id="htk-Cl-vcj"/>
                         <outletCollection property="instructionViews" destination="foe-Yj-oTI" collectionClass="NSMutableArray" id="fuf-C4-Tyx"/>
                         <outletCollection property="instructionViews" destination="W1v-FV-cat" collectionClass="NSMutableArray" id="RCj-Hf-L46"/>
+                        <outletCollection property="instructionViews" destination="CiJ-9r-73C" collectionClass="NSMutableArray" id="bWT-E8-kLN"/>
+                        <outletCollection property="instructionViews" destination="Zew-Bs-4uy" collectionClass="NSMutableArray" id="aMm-Sx-17S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBG-Yn-bxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -573,7 +577,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I8K-jb-4Xh" id="gA5-aC-dFD">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-tG-VXZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-tG-VXZ">
                                             <rect key="frame" x="13" y="15" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="b15-Wh-Be7"/>
@@ -591,7 +595,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f30-sN-4g7">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f30-sN-4g7">
                                             <rect key="frame" x="83" y="15" width="509" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

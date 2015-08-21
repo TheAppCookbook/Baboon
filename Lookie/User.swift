@@ -83,6 +83,14 @@ class User: PFUser, PFSubclassing {
             completion(invitations)
         })
     }
+    
+    func familyMembers(completion: ([User]) -> Void) {
+        let predicate = NSPredicate(format: "(pFamily = %@) AND (username != %@)", self.pFamily, self.identifier)
+        User.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) in
+            let familyMembers = (objects as! [User])
+            completion(familyMembers)
+        })
+    }
 
     // MARK: Class Accessors
     class func identifierIsValid(identifier: String) -> Bool {
