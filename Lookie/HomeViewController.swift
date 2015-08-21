@@ -11,13 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
     // MARK: Properties
     @IBOutlet var familyButton: UIButton!
+    @IBOutlet var postButton: UIButton!
+    @IBOutlet var settingsButton: UIButton!
     
     // MARK: Lifecycle
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.familyButton.setTitle(String.familyEmojis.random(),
-            forState: .Normal)
+        super.viewDidLoad()        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -33,7 +32,7 @@ class HomeViewController: UIViewController {
         switch segue.identifier {
         case .Some("PresentPost"):
             let postVC = segue.destinationViewController as! PostViewController
-            postVC.image = sender as! UIImage
+            postVC.image = (sender as! UIImage)
         
         default:
             break

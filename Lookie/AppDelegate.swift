@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         User.registerSubclass()
+        Post.registerSubclass()
+        
         Parse.setApplicationId("JCAeRxPMG8eEKPAdmQP2PPVUQ5TjFRhnaH9AD9GL",
             clientKey: "GLaVrGdbmAHRed6d0w6xk0PSJK1Lwtk9Z9h7fDVd")
         

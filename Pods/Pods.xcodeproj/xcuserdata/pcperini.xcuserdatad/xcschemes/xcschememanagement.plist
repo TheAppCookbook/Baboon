@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B978AA4F50357341A68C39330F9D8E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4ADDC830F1F3957A877DC0A28F0CBD4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C87612B504BFD79761FA8C525377F6E</key>
+		<key>567B0E795F5D8FA3FB47AF6EF4F9F289</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>813BAD90FC7B0FCCB965C9D7BE950F05</key>
+		<key>5FEA3304B427C2D2185328C49ADDA7F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8266CE4616AD1E8679275DCB5D4BE08</key>
+		<key>6BD95C1C22FE60EE642258DFC44922B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8D8BD27193D44333795C996929C4461</key>
+		<key>C89D8EF9FABB67BA5DF1D0D187EC6995</key>
 		<dict>
 			<key>primary</key>
 			<true/>

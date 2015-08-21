@@ -6,4 +6,5 @@ link_with 'Lookie!', 'Lookie!Tests'
 
 pod 'Parse'
 pod 'Spring'
+pod 'AFNetworking'
 pod 'ACBInfoPanel', :git => 'git@github.com:TheAppCookbook/templates.git', :branch => 'master'

@@ -46,11 +46,21 @@ class LoginViewController: UIViewController {
         self.signupButton.hidden = true
         self.activityIndicator.startAnimating()
         
+        self.nameField.resignFirstResponder()
+        self.emojiField.resignFirstResponder()
+        self.identifierField.resignFirstResponder()
+        self.birthYearField.resignFirstResponder()
+        self.view.userInteractionEnabled = false
+        
         user.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) in
             if success && error == nil {
                 self.presentingViewController?.dismissViewControllerAnimated(true,
                     completion: nil)
             } else {
+                self.activityIndicator.stopAnimating()
+                self.view.userInteractionEnabled = true
+                self.signupButton.hidden = false
+                
                 self.label.text = "Oh no, something went wrong! 🙀"
             }
         }

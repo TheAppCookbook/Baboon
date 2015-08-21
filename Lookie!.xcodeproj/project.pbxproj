@@ -27,6 +27,8 @@
 		73FAFBA21B8681A500E14A1B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73FAFB9F1B8681A500E14A1B /* Nunito-Regular.ttf */; };
 		73FE3B2F1B869548009914ED /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B2E1B869548009914ED /* FeedViewController.swift */; };
 		73FE3B311B869F9A009914ED /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B301B869F9A009914ED /* PostViewController.swift */; };
+		73FE3B331B86A166009914ED /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B321B86A166009914ED /* Post.swift */; };
+		73FE3B341B86A72F009914ED /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE3B321B86A166009914ED /* Post.swift */; };
 		B6FB46DB1D7A21CB1FE925EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,7 @@
 		73FAFBA31B868B4400E14A1B /* Lookie!-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lookie!-Bridging-Header.h"; sourceTree = "<group>"; };
 		73FE3B2E1B869548009914ED /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		73FE3B301B869F9A009914ED /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		73FE3B321B86A166009914ED /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D4C0EF765B80BB69A8353339 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				73DE2B111B863FF80068CB17 /* User.swift */,
+				73FE3B321B86A166009914ED /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -408,6 +412,7 @@
 				73DE2B161B864CCD0068CB17 /* LoginViewController.swift in Sources */,
 				73DE2AF41B863EE10068CB17 /* HomeViewController.swift in Sources */,
 				73FE3B2F1B869548009914ED /* FeedViewController.swift in Sources */,
+				73FE3B331B86A166009914ED /* Post.swift in Sources */,
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
 				73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */,
 				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
@@ -423,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FE3B341B86A72F009914ED /* Post.swift in Sources */,
 				73DE2B141B8643D50068CB17 /* User.swift in Sources */,
 				73DE2B081B863EE10068CB17 /* LookieTests.swift in Sources */,
 			);

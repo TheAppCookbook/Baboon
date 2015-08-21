@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 AppCookbook. All rights reserved.
 //
 
-import UIKit
 import Parse
 
 class User: PFUser, PFSubclassing {
@@ -23,7 +22,7 @@ class User: PFUser, PFSubclassing {
     @NSManaged var pName: String
     @NSManaged var pEmoji: String
     @NSManaged var pBirthYear: Int
-    @NSManaged var pFamilies: NSMutableArray //[String]
+    @NSManaged var pFamily: String
     
     // MARK: Properties
     var name: String { return self.pName }
@@ -38,8 +37,8 @@ class User: PFUser, PFSubclassing {
         return (year - User.AdulthoodAge) > self.birthYear
     }
     
-    var hasFamilies: Bool {
-        return self.pFamilies.count > 0
+    var hasFamily: Bool {
+        return self.pFamily.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0
     }
     
     // MARK: Initializers
@@ -53,15 +52,31 @@ class User: PFUser, PFSubclassing {
         self.pName = name
         self.pEmoji = emoji
         self.pBirthYear = birthYear
-        self.pFamilies = NSMutableArray()
+        self.pFamily = ""
         
         self.username = identifier
         self.password = NSUUID().UUIDString
     }
     
     // MARK: Accessors
-    func addFamily(identifier: String) {
-        self.pFamilies.addObject(identifier)
+    func setFamily(identifier: String) {
+        self.pFamily = identifier
+    }
+    
+    func posts(completion: ([Post]) -> Void) {
+        let predicate = NSPredicate(format: "pAuthor = %@", self.identifier)
+        Post.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) in
+            let posts = objects as! [Post]
+            completion(posts)
+        }
+    }
+    
+    func feed(completion: ([Post]) -> Void) {
+        let predicate = NSPredicate(format: "(pAuthor = %@) OR (pFamily = %@)", self.identifier, self.pFamily)
+        Post.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) in
+            let posts = (objects as! [Post]).reverse()
+            completion(posts)
+        }
     }
 
     // MARK: Class Accessors

@@ -26,7 +26,7 @@ class FamilyViewController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         let user = User.currentUser()!
-        if !user.hasFamilies {
+        if !user.hasFamily {
             if !user.isAdult {
                 self.instructionHeightConstraint.constant = self.view.bounds.height / 2.0
             } else {
@@ -43,7 +43,7 @@ class FamilyViewController: UIViewController {
     // MARK: Responders
     @IBAction func addFamilyButtonWasPressed(sender: UIButton!) {
         let user = User.currentUser()!
-        if !user.hasFamilies {
+        if !user.hasFamily {
             self.instructionTopConstraint.constant = -self.view.bounds.height
             self.instructionsShowing = false
             
