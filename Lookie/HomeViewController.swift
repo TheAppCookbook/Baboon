@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ACBInfoPanel
 
 class HomeViewController: UIViewController {
     // MARK: Properties
@@ -16,7 +17,7 @@ class HomeViewController: UIViewController {
     
     // MARK: Lifecycle
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -25,6 +26,30 @@ class HomeViewController: UIViewController {
         if User.currentUser() == nil {
             self.performSegueWithIdentifier("PresentLogin",
                 sender: nil)
+            return
+        }
+        
+        let user = User.currentUser()!
+        user.invitations { (invitations: [Invitation]) in
+            if let invitation = invitations.first {
+                let alert = UIAlertController(title: "Join \(invitation.invitingUserName)'s family?",
+                    message: "They've invited you to join their family!",
+                    preferredStyle: .Alert)
+                
+                alert.addAction(UIAlertAction(title: "No", style: .Cancel) { (action: UIAlertAction!) in
+                    invitations.map { $0.deleteInBackgroundWithBlock(nil) }
+                })
+                
+                alert.addAction(UIAlertAction(title: "Join", style: .Default) { (action: UIAlertAction!) in
+                    user.family = invitation.family
+                    user.saveInBackgroundWithBlock(nil)
+                    invitations.map { $0.deleteInBackgroundWithBlock(nil) }
+                })
+                
+                self.presentViewController(alert,
+                    animated: true,
+                    completion: nil)
+            }
         }
     }
     
@@ -50,6 +75,15 @@ class HomeViewController: UIViewController {
         
         imagePicker.delegate = self
         self.presentViewController(imagePicker,
+            animated: true,
+            completion: nil)
+    }
+    
+    @IBAction func settingsButtonWasPressed(sender: UIButton!) {
+        let infoPanel = ACBInfoPanelViewController()
+        infoPanel.ingredient = "Self-Publishing for Kids"
+        
+        self.presentViewController(infoPanel,
             animated: true,
             completion: nil)
     }

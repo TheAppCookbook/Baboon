@@ -37,8 +37,9 @@ class User: PFUser, PFSubclassing {
         return (year - User.AdulthoodAge) > self.birthYear
     }
     
-    var hasFamily: Bool {
-        return self.pFamily.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0
+    var family: String? {
+        get { return self.pFamily.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0 ? self.pFamily : nil }
+        set { if newValue != nil { self.pFamily = newValue! } }
     }
     
     // MARK: Initializers
@@ -59,10 +60,6 @@ class User: PFUser, PFSubclassing {
     }
     
     // MARK: Accessors
-    func setFamily(identifier: String) {
-        self.pFamily = identifier
-    }
-    
     func posts(completion: ([Post]) -> Void) {
         let predicate = NSPredicate(format: "pAuthor = %@", self.identifier)
         Post.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) in
@@ -72,11 +69,19 @@ class User: PFUser, PFSubclassing {
     }
     
     func feed(completion: ([Post]) -> Void) {
-        let predicate = NSPredicate(format: "(pAuthor = %@) OR (pFamily = %@)", self.identifier, self.pFamily)
+        let predicate = NSPredicate(format: "(pAuthor = %@) OR (pFamily = %@ AND pFamily != '')", self.identifier, self.pFamily)
         Post.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) in
             let posts = (objects as! [Post]).reverse()
             completion(posts)
         }
+    }
+    
+    func invitations(completion: ([Invitation]) -> Void) {
+        let predicate = NSPredicate(format: "pInvitedUser = %@", self.identifier)
+        Invitation.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) in
+            let invitations = (objects as! [Invitation])
+            completion(invitations)
+        })
     }
 
     // MARK: Class Accessors
@@ -91,5 +96,12 @@ class User: PFUser, PFSubclassing {
             range: NSMakeRange(0, length)) != nil
         
         return validEmail || validPhone
+    }
+    
+    class func userWithIdentifier(identifier: String, completion: (User?) -> Void) {
+        let predicate = NSPredicate(format: "username = %@", identifier)
+        User.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]?, error: NSError?) in
+            completion(objects?.first as? User)
+        })
     }
 }

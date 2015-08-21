@@ -9,6 +9,9 @@
 import UIKit
 
 class FamilyMembersViewController: UITableViewController {
+    // MARK: Properties
+    @IBOutlet var userSearchField: UITextField!
+    
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()

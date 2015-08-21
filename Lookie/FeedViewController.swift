@@ -13,7 +13,13 @@ class FeedViewController: UITableViewController {
     private var posts: [Post] = []
     
     // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.contentInset = UIEdgeInsets(top: 20.0, left: 0, bottom: 110.0, right: 0)
+    }
+    
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         self.reloadData()
     }
     
