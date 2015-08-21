@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lookie/FamilyViewController.swift"
-            timestampString = "461821829.941433"
+            timestampString = "461824258.457165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "inviteUser(_:toFamily:)"
             landmarkType = "5">
          </BreakpointContent>

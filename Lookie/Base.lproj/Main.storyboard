@@ -15,6 +15,7 @@
             <string>Nunito-Light</string>
             <string>Nunito-Light</string>
             <string>Nunito-Light</string>
+            <string>Nunito-Light</string>
         </mutableArray>
         <mutableArray key="Nunito-Regular.ttf">
             <string>Nunito-Regular</string>
@@ -488,16 +489,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or, if you’re the first one here, you can create a family yourself!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1v-FV-cat">
-                                <rect key="frame" x="153" y="346" width="295" height="48"/>
+                                <rect key="frame" x="153" y="346" width="295" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="295" id="chQ-Cc-fbI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="family-signup" translatesAutoresizingMaskIntoConstraints="NO" id="CiJ-9r-73C">
-                                <rect key="frame" x="246" y="412" width="108" height="96"/>
+                                <rect key="frame" x="246" y="415.5" width="108" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="108" id="ZOc-OZ-Wwe"/>
                                     <constraint firstAttribute="height" constant="96" id="cdH-c7-Din"/>

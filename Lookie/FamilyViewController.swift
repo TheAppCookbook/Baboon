@@ -43,6 +43,7 @@ class FamilyViewController: UIViewController {
             }
         } else {
             self.instructionsShowing = false
+            self.addFamilyButton.setTitle("Add Family Members", forState: .Normal)
             
             self.instructionTopConstraint.constant = self.view.bounds.height
             self.tableContainerView.hidden = false
