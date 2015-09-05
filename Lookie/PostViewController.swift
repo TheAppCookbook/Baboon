@@ -18,7 +18,7 @@ class PostViewController: UIViewController {
     var image: UIImage?
     
     var validInput: Bool {
-        return (self.titleField.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0)
+        return (self.titleField.text?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0)
     }
     
     // MARK: Lifecylce
@@ -40,7 +40,7 @@ class PostViewController: UIViewController {
         self.view.userInteractionEnabled = false
         
         let user = User.currentUser()!
-        let post = Post(title: self.titleField.text,
+        let post = Post(title: self.titleField.text!,
             author: user)
         
         post.setImage(self.image!) { (url: NSURL?) in

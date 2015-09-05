@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F1B5BEC967F2441A560B63D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5611D4F3E86FDAEC76A089E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		73D2B32A1B9B90E20059B43E /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D2B3291B9B90E20059B43E /* KeyboardLayoutConstraint.swift */; };
 		73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF11B863EE10068CB17 /* AppDelegate.swift */; };
 		73DE2AF41B863EE10068CB17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE2AF31B863EE10068CB17 /* HomeViewController.swift */; };
 		73DE2AF71B863EE10068CB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DE2AF51B863EE10068CB17 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		2B8388759989B32F9B1ADF11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5611D4F3E86FDAEC76A089E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D2B3291B9B90E20059B43E /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
 		73DE2AEC1B863EE10068CB17 /* Lookie!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lookie!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE2AF01B863EE10068CB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DE2AF11B863EE10068CB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -200,6 +202,7 @@
 		73FAFB961B866EE800E14A1B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				73D2B3291B9B90E20059B43E /* KeyboardLayoutConstraint.swift */,
 				73FAFB941B866EE400E14A1B /* VisualExtensions.swift */,
 				73FAFB991B8674E000E14A1B /* EmojiExtensions.swift */,
 				73FAFB9B1B86755400E14A1B /* RandomExtensions.swift */,
@@ -265,7 +268,8 @@
 		73DE2AE41B863EE10068CB17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = AppCookbook;
 				TargetAttributes = {
 					73DE2AEB1B863EE10068CB17 = {
@@ -426,6 +430,7 @@
 				73DE2AF21B863EE10068CB17 /* AppDelegate.swift in Sources */,
 				73FAFB951B866EE400E14A1B /* VisualExtensions.swift in Sources */,
 				73FAFB9A1B8674E000E14A1B /* EmojiExtensions.swift in Sources */,
+				73D2B32A1B9B90E20059B43E /* KeyboardLayoutConstraint.swift in Sources */,
 				73FE3B391B86DC94009914ED /* Like.swift in Sources */,
 				73FAFB981B86706D00E14A1B /* FamilyMembersViewController.swift in Sources */,
 				73DE2B121B863FF80068CB17 /* User.swift in Sources */,
@@ -498,6 +503,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -571,6 +577,7 @@
 				INFOPLIST_FILE = Lookie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Lookie!";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lookie/Lookie!-Bridging-Header.h";
@@ -590,6 +597,7 @@
 				INFOPLIST_FILE = Lookie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Lookie!";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Lookie/Lookie!-Bridging-Header.h";
@@ -612,6 +620,7 @@
 				);
 				INFOPLIST_FILE = LookieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Lookie!Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lookie!.app/Lookie!";
 			};
@@ -628,6 +637,7 @@
 				);
 				INFOPLIST_FILE = LookieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "the.appcookbook.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Lookie!Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lookie!.app/Lookie!";
 			};

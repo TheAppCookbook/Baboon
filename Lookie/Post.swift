@@ -60,7 +60,7 @@ class Post: PFObject, PFSubclassing {
     // MARK: Mutators
     func setImage(image: UIImage, completion: (NSURL?) -> Void) {
         if let imageData = UIImagePNGRepresentation(image) {
-            let encodedData = imageData.base64EncodedStringWithOptions(nil)
+            let encodedData = imageData.base64EncodedStringWithOptions([])
             
             let manager = AFHTTPRequestOperationManager()
             manager.responseSerializer = AFJSONResponseSerializer()

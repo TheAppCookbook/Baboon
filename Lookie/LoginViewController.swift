@@ -25,9 +25,9 @@ class LoginViewController: UIViewController {
     }
     
     var inputValid: Bool {
-        return (self.nameField.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0) &&
-            (self.emojiField.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0) &&
-            (User.identifierIsValid(self.identifierField.text)) &&
+        return (self.nameField.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0) &&
+            (self.emojiField.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0) &&
+            (User.identifierIsValid(self.identifierField.text!)) &&
             (self.birthYear > 1800)
     }
     
@@ -38,10 +38,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signupButtonWasPressed(sender: UIButton!) {
-        let user = User(name: self.nameField.text,
-            emoji: self.emojiField.text,
+        let user = User(name: self.nameField.text!,
+            emoji: self.emojiField.text!,
             birthYear: self.birthYear!,
-            identifier: self.identifierField.text)
+            identifier: self.identifierField.text!)
         
         self.signupButton.hidden = true
         self.activityIndicator.startAnimating()
@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         if textField == self.emojiField {
-            return (string.containsEmoji && count(textField.text) == 0) || string.isEmpty
+            return (string.containsEmoji && textField.text?.characters.count == 0) || string.isEmpty
         }
         
         self.inputChanged()

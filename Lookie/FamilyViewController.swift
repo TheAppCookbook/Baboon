@@ -98,7 +98,7 @@ class FamilyViewController: UIViewController {
                     forState: .Normal)
             }
         } else {
-            let userIdentifier = self.embededUserSearchField().text
+            let userIdentifier = self.embededUserSearchField().text!
             let familyIdentifier = User.currentUser()!.family!
             
             self.embededUserSearchField().userInteractionEnabled = false

@@ -43,7 +43,7 @@ class FeedViewController: UITableViewController {
                 sender.setImage(UIImage(named: "heart-on"), forState: .Normal)
                 sender.enabled = false
                 
-                var likeCount = (likesLabel.text as NSString!).integerValue + 1
+                let likeCount = (likesLabel.text as NSString!).integerValue + 1
                 likesLabel.text = "\(likeCount)"
             } else {
                 sender.setImage(UIImage(named: "heart-off"), forState: .Normal)
@@ -53,13 +53,13 @@ class FeedViewController: UITableViewController {
     }
 }
 
-extension FeedViewController: UITableViewDataSource {
+extension FeedViewController { // UITableViewDataSource
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.posts.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as UITableViewCell!
         let post = self.posts[indexPath.row]
         
         let imageView = cell.viewWithTag(1) as! UIImageView
@@ -79,7 +79,7 @@ extension FeedViewController: UITableViewDataSource {
         post.likes { (likes: [Like]) in
             likesLabel.text = "\(likes.count)"
             
-            var likedByUser = likes.filter({ $0.user == User.currentUser()!.username! }).count > 0
+            let likedByUser = likes.filter({ $0.user == User.currentUser()!.username! }).count > 0
             if likedByUser {
                 likeButton.setImage(UIImage(named: "heart-on"), forState: .Normal)
                 likeButton.enabled = false

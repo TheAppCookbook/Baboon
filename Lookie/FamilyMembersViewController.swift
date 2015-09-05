@@ -34,13 +34,13 @@ class FamilyMembersViewController: UITableViewController {
     }
 }
 
-extension FamilyMembersViewController: UITableViewDataSource {
+extension FamilyMembersViewController { // UITableViewDataSource
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.familyMembers.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as UITableViewCell!
         let user = self.familyMembers[indexPath.row]
         
         let emojiLabel = cell.viewWithTag(1) as! UILabel
@@ -53,7 +53,7 @@ extension FamilyMembersViewController: UITableViewDataSource {
     }
 }
 
-extension FamilyMembersViewController: UITableViewDelegate {
+extension FamilyMembersViewController { // UITableViewDelegate
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.separatorInset = UIEdgeInsets()
         cell.layoutMargins = UIEdgeInsets()

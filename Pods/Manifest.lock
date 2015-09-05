@@ -24,13 +24,11 @@ PODS:
   - Bolts/Tasks (1.2.0)
   - Parse (1.8.1):
     - Bolts/Tasks (>= 1.2.0)
-  - Spring (1.0.3)
 
 DEPENDENCIES:
   - ACBInfoPanel (from `git@github.com:TheAppCookbook/templates.git`, branch `master`)
   - AFNetworking
   - Parse
-  - Spring
 
 EXTERNAL SOURCES:
   ACBInfoPanel:
@@ -47,6 +45,5 @@ SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   Bolts: d176cb1e0012175589e389a9db49b85e27787576
   Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
-  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
 COCOAPODS: 0.38.2

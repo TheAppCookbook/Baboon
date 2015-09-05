@@ -8,14 +8,12 @@
 
 import Parse
 
-class User: PFUser, PFSubclassing {
+class User: PFUser {
     // MARK: Constants
-    static let EmailRegex = NSRegularExpression(pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$",
-        options: nil,
-        error: nil)!
-    static let PhoneRegex = NSRegularExpression(pattern: "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
-        options: nil,
-        error: nil)!
+    static let EmailRegex = try! NSRegularExpression(pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$",
+        options: [])
+    static let PhoneRegex = try! NSRegularExpression(pattern: "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
+        options: [])
     static let AdulthoodAge = 16
     
     // MARK: Parse Properties
@@ -31,7 +29,7 @@ class User: PFUser, PFSubclassing {
     var emoji: String { return self.pEmoji }
     
     var isAdult: Bool {
-        let year = NSCalendar.currentCalendar().component(NSCalendarUnit.CalendarUnitYear,
+        let year = NSCalendar.currentCalendar().component(NSCalendarUnit.Year,
             fromDate: NSDate())
         
         return (year - User.AdulthoodAge) > self.birthYear
@@ -71,7 +69,7 @@ class User: PFUser, PFSubclassing {
     func feed(completion: ([Post]) -> Void) {
         let predicate = NSPredicate(format: "(pAuthor = %@) OR (pFamily = %@ AND pFamily != '')", self.identifier, self.pFamily)
         Post.queryWithPredicate(predicate)?.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) in
-            let posts = (objects as! [Post]).reverse()
+            let posts = Array((objects as! [Post]).reverse())
             completion(posts)
         }
     }
@@ -97,10 +95,10 @@ class User: PFUser, PFSubclassing {
         let length = identifier.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
         
         let validEmail = EmailRegex.firstMatchInString(identifier,
-            options: nil,
+            options: [],
             range: NSMakeRange(0, length)) != nil
         let validPhone = PhoneRegex.firstMatchInString(identifier,
-            options: nil,
+            options: [],
             range: NSMakeRange(0, length)) != nil
         
         return validEmail || validPhone
