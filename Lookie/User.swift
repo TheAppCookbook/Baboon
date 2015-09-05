@@ -10,7 +10,7 @@ import Parse
 
 class User: PFUser {
     // MARK: Constants
-    static let EmailRegex = try! NSRegularExpression(pattern: "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$",
+    static let EmailRegex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$",
         options: [])
     static let PhoneRegex = try! NSRegularExpression(pattern: "^(\\+\\d{1,2}\\s)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$",
         options: [])
@@ -94,6 +94,9 @@ class User: PFUser {
     class func identifierIsValid(identifier: String) -> Bool {
         let length = identifier.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
         
+        print(EmailRegex.firstMatchInString(identifier,
+            options: [],
+            range: NSMakeRange(0, length)))
         let validEmail = EmailRegex.firstMatchInString(identifier,
             options: [],
             range: NSMakeRange(0, length)) != nil
